@@ -1,0 +1,148 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f5fb;
+  color: #20243a;
+  min-height: 100vh;
+  padding: 40px 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 36px;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(25, 35, 75, 0.08);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  color: #6554d9;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+
+h1 {
+  font-size: clamp(28px, 5vw, 40px);
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  color: #687087;
+  line-height: 1.6;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #dce0eb;
+  border-radius: 9px;
+  font: inherit;
+  font-size: 14px;
+  color: #20243a;
+  background: #fff;
+}
+
+textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #d9d3ff;
+  border-color: #6554d9;
+}
+
+button {
+  border: none;
+  border-radius: 9px;
+  padding: 14px 18px;
+  margin-top: 12px;
+  background: #6554d9;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #5140c3;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+#result-section {
+  margin-top: 32px;
+}
+
+#result-section h2 {
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+#readme-output {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  background: #f7f8fc;
+  border: 1px solid #e0e3ed;
+  border-radius: 10px;
+  padding: 18px;
+  line-height: 1.7;
+  font-family: monospace;
+  font-size: 13px;
+  max-height: 500px;
+  overflow: auto;
+}
+
+#status {
+  margin-top: 18px;
+  text-align: center;
+  color: #5140c3;
+  line-height: 1.5;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  .container {
+    padding: 22px 18px;
+  }
+}
