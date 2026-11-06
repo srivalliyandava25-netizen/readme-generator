@@ -97,6 +97,10 @@ Return only the Markdown content, without surrounding code fences.
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
-});
+module.exports = app;
+
+if (require.main === module) {
+  app.listen(process.env.PORT || 5000, () => {
+    console.log(`Server running at http://localhost:${process.env.PORT || 5000}`);
+  });
+}
